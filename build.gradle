@@ -1,5 +1,17 @@
 plugins {
     id 'java'
+    id 'maven'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'bin/td/example/java'
+        }
+        resources {
+            srcDir 'bin/td/tdlib/bin'
+        }
+    }
 }
 
 group 'com.github.vbychkovskyi'
